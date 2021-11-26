@@ -5,7 +5,7 @@ import numpy as np
 # import matplotlib.cm as cm
 
 
-f = h.File('jet-images_Mass60-100_pT250-300_R1.25_Pix25 .hdf5','r')
+f = h.File('inputfile','r') # input file at https://data.mendeley.com/datasets/4r4v785rgx/1 with name "jet-images_Mass60-100_pT250-300_R1.25_Pix25.hdf5" of size 2gb.
 
 
 jetTau21 = f['tau_21'] # Jet tau2/tau1 ratio

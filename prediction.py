@@ -7,7 +7,7 @@ import numpy as np
 # import matplotlib.cm as cm
 
 
-f = h.File('jet-images_Mass60-100_pT250-300_R1.25_Pix25 .hdf5','r')
+f = h.File('inputfile','r') #input file at https://data.mendeley.com/datasets/4r4v785rgx/1 with name "jet-images_Mass60-100_pT250-300_R1.25_Pix25.hdf5" of size 2gb.
 
 
 jetImage = f['image'] # 25 x 25 image
@@ -36,7 +36,7 @@ X=X.reshape(size,25,25,1)
 Y= to_categorical(Y)
 # print(Y)
 
-model1 = load_model('model_n=0.1')
+model1 = load_model('model1_n=0.1') # model2_n=0.1 
 model1.summary()
 
 print("total test instances=",size)

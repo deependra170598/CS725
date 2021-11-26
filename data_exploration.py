@@ -7,7 +7,7 @@ import numpy as np
 # import matplotlib.cm as cm
 
 
-f = h5.File('jet-images_Mass60-100_pT250-300_R1.25_Pix25 .hdf5','r')
+f = h5.File('input_file_name','r') #input_filename at https://data.mendeley.com/datasets/4r4v785rgx/1 . Download file with name "jet-images_Mass60-100_pT250-300_R1.25_Pix25.hdf5" with size 2gb.
 # print(list(f.keys()))
 # dataKeys = [ii for ii in f.keys()] # Get keys for the dataset
 # print('Dataset Keys')
